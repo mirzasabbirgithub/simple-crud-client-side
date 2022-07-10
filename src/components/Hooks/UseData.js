@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const UseData = () => {
           const [records, setRecords] = useState([]);
           useEffect(() => {
-                    fetch('http://localhost:5000/record')
+                    fetch('https://blooming-woodland-08999.herokuapp.com/record')
                               .then(res => res.json())
                               .then(data => setRecords(data));
           }, [])

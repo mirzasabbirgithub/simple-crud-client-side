@@ -5,7 +5,7 @@ import { ToastContainer, toast } from 'react-toastify';
 const AddRecord = () => {
           const { register, handleSubmit } = useForm();
           const onSubmit = data => {
-                    const url = `http://localhost:5000/record`;
+                    const url = `https://blooming-woodland-08999.herokuapp.com/record`;
                     fetch(url, {
                               method: 'POST',
                               headers: {

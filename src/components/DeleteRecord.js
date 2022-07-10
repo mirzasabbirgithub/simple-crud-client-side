@@ -9,7 +9,7 @@ const DeleteRecord = () => {
           const handleDelete = id => {
                     const proceed = window.confirm('Are you sure to detele the item?');
                     if (proceed) {
-                              const url = `http://localhost:5000/record/${id}`;
+                              const url = `https://blooming-woodland-08999.herokuapp.com/record/${id}`;
                               fetch(url, {
                                         method: 'DELETE'
                               })

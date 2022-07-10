@@ -10,7 +10,7 @@ const Selected = () => {
           const { register, handleSubmit } = useForm();
 
           useEffect(() => {
-                    const url = `http://localhost:5000/record/${Id}`;
+                    const url = `https://blooming-woodland-08999.herokuapp.com/record/${Id}`;
                     fetch(url)
                               .then(res => res.json())
                               .then(data => setRecord(data));
@@ -29,7 +29,7 @@ const Selected = () => {
                     const img2 = img2Ref.current.value;
                     const updatedRecord = { name, detial, img1, img2 };
 
-                    const url = `http://localhost:5000/record/${Id}`;
+                    const url = `https://blooming-woodland-08999.herokuapp.com/record/${Id}`;
                     fetch(url, {
                               method: "PUT",
                               headers: {
